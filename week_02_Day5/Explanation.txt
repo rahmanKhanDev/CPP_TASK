@@ -1,0 +1,26 @@
+Explanation of the Code 
+
+TaskScheduler Class: 
+Manages tasks using a vector of std::function<void()>. 
+Executes tasks concurrently using std::thread. 
+Uses std::mutex and std::condition_variable to ensure thread safety and synchronization. 
+Simulated Tasks: 
+renderingTask(): Simulates screen rendering. 
+inputHandlingTask(): Simulates user input handling. 
+dataUpdateTask(): Simulates data updates. 
+Error Handling: 
+Catches exceptions in task execution and logs errors without crashing the system. 
+Testing: 
+Unit test for renderingTask. 
+Integration test to validate the entire scheduler. 
+Main Program: 
+Adds tasks, executes them, and demonstrates thread-safe task scheduling. 
+ 
+
+Output :
+When you run the program, the output will demonstrate: 
+Concurrent execution of tasks. 
+Proper error handling. 
+Successful completion of all tasks. 
+Unit and integration test results. 
+ 
